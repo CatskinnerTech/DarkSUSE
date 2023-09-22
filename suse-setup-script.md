@@ -17,35 +17,31 @@ Addrepo...
 ## Inital Installs
 ```
 sudo zypper in neovim curl go hugo python brave-browser
-sudo zypper in thunderbird
+sudo zypper in thunderbird githubdesktop
 
 ```
 b. Install Fonts
-```
-zypper addrepo https://download.opensuse.org/repositories/openSUSE:Factory/standard/openSUSE:Factory.repo
-zypper refresh
-zypper install fetchmsttfonts
-```
-    Install Nerdfonts:
+    1. Install MS Compatability Fonts
+    ```
+    sudo zypper install fetchmsttfonts
+    ```
+    2. Install Nerdfonts:
     ```
     https://www.nerdfonts.com/font-downloads
     ```
-        1. MesloLG
-        2. FiraCode
+        a. MesloLG
+        b. FiraCode
     - Save as .zip files in downloads folder
     - In terminal:
     ```
     cd Downloads/
-    unzip Meslo
+    unzip Meslo FiraCode
     rm Meslo.zip
     mkdir ~/.fonts
     mv * ~/.fonts
     cd ~/.fonts
     fc-cache -vf
-    
-    ```
-    ```    
-    unzip FiraCode
+
     ```
 
 ## Initial Configs
