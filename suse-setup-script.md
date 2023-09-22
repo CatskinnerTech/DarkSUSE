@@ -4,10 +4,13 @@
 1. Software - Block wayland (taboo) in details for KDE
 2. Add Brave and Pacman Repos
 ```
-Addrepo...
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+
+sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 ```
 3. Libreoffice
-
+4. Add Thunderbird?
+5. 
 6. Remove Firefox
 7. Remove Discover
 8. Remove KDE wallet (Not manager unless you have the wallet removed!)
@@ -15,12 +18,13 @@ Addrepo...
 
 
 ## Inital Installs
+1. Install languages and base programs
 ```
 sudo zypper in neovim curl go hugo python brave-browser
 sudo zypper in thunderbird githubdesktop
 
 ```
-b. Install Fonts
+2. Install Fonts
     1. Install MS Compatability Fonts
     ```
     sudo zypper install fetchmsttfonts
@@ -29,8 +33,8 @@ b. Install Fonts
     ```
     https://www.nerdfonts.com/font-downloads
     ```
-        a. MesloLG
-        b. FiraCode
+        1. MesloLG
+        2. FiraCode
     - Save as .zip files in downloads folder
     - In terminal:
     ```
