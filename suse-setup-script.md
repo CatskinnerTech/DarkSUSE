@@ -53,6 +53,10 @@ sudo zypper in thunderbird githubdesktop
 
 
 ## Flatpack Installs
+```
+sudo zypper in flatpak
+flatpak install flatseal discord steam
+```
 1. Flatpack
 2. Flatseal
 3. Discord w/ limitations
